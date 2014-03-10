@@ -10,8 +10,10 @@ end
 @obj = MyClass.new
 autorelease_pool {
   @obj.delegate = MyDelegate.new # wraps `delegate` in a WeakRef
+  @obj.delegate
+# => #<MyDelegate:0x123123>
 }
-@obj.delegate
+@obj.delegate # after deallocation
 # => nil
 ```
 
