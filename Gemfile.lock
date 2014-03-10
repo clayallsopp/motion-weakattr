@@ -1,0 +1,16 @@
+PATH
+  remote: .
+  specs:
+    motion-weakattr (0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  motion-weakattr!
+  rake
